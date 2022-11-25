@@ -44,7 +44,8 @@ For to access the CLI use `docker exec -it mssql_backup_container node cli`.
 
 | Variables      | Default Value | Description                             |
 |----------------|---------------|-----------------------------------------|
-| DAILY_CRON     | 4 4 * * *     | Run daily backup at 04:04               |
+| DAILY_CRON     | 2 4 * * *     | Run daily backup at 04:02               |
+| WEEKLY_CRON    | 4 4 * * 0     | Run weekly backup at 04:04              |
 | MONTHLY_CRON   | 6 4 1 * *     | Run monthly backup at 04:06             |
 | YEARLY_CRON    | 8 4 1 1 *     | Run yearly backup at 04:08              |
 | MSSQL_IP       | localhost     | Ip address of MSSQL Database            |
