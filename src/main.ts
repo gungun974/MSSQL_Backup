@@ -14,7 +14,7 @@ cron.schedule(dailyCron, async () => {
   await keepLastFile('day', 7);
 });
 
-cron.schedule(dailyCron, async () => {
+cron.schedule(weeklyCron, async () => {
   MainLogger.info('Execute', weeklyCron);
   await makeNewBackup('weekly');
   await keepLastFile('weekly', 4);
